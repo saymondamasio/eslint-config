@@ -6,8 +6,7 @@ module.exports = {
 	extends: ['plugin:react/recommended', 'standard-with-typescript', 'plugin:prettier/recommended'],
 	parserOptions: {
 		ecmaVersion: 'latest',
-		sourceType: 'module',
-		project: './tsconfig.json'
+		sourceType: 'module'
 	},
 	plugins: ['react', 'react-hooks', 'prettier'],
 	rules: {

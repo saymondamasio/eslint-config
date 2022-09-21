@@ -7,7 +7,8 @@ module.exports = {
 	overrides: [],
 	plugins: ['prettier'],
 	parserOptions: {
-		project: ['./tsconfig.json']
+		ecmaVersion: 'latest',
+		sourceType: 'module'
 	},
 	rules: {
 		'prettier/prettier': 'error',
