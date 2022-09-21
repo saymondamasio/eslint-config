@@ -11,6 +11,19 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
-		'prettier/prettier': 'error'
+		'prettier/prettier': [
+			'error',
+			{
+				tabWidth: 2,
+				singleQuote: true,
+				bracketSpacing: true,
+				arrowParens: 'avoid',
+				trailingComma: 'none',
+				printWidth: 100,
+				endOfLine: 'auto',
+				useTabs: true,
+				semi: false
+			}
+		]
 	}
 }
