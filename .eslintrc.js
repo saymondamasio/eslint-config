@@ -3,16 +3,14 @@ module.exports = {
 		browser: true,
 		es2021: true
 	},
-	extends: ['standard-with-typescript', 'plugin:prettier/recommended'],
-	overrides: [],
+	extends: ['google', 'plugin:prettier/recommended'],
 	plugins: ['prettier'],
+	overrides: [],
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module'
 	},
 	rules: {
-		'prettier/prettier': 'error',
-		'@typescript-eslint/strict-boolean-expressions': 'off',
-		'prefer-template': 'error'
+		'prettier/prettier': 'error'
 	}
 }

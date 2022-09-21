@@ -1,6 +1,6 @@
 {
-	"name": "eslint-config",
-	"version": "1.0.0",
+	"name": "@saymondamasio/eslint-config",
+	"version": "1.0.1",
 	"description": "My config eslint and prettier.",
 	"keywords": [
 		"eslint",
@@ -21,16 +21,39 @@
 	},
 	"license": "MIT",
 	"private": false,
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
 	"author": "Saymon Damásio <saymon.damasio95@gmail.com> (saymoncode.com)",
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.0.0",
-		"eslint": "^8.0.1",
+		"eslint": "^8.23.1",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^8.5.0",
 		"eslint-config-standard-with-typescript": "^23.0.0",
 		"eslint-plugin-import": "^2.25.2",
 		"eslint-plugin-n": "^15.0.0",
+		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.31.8",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"prettier": "^2.7.1",
+		"typescript": "*"
+	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.0.0",
+		"eslint": "^8.23.1",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard-with-typescript": "^23.0.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-n": "^15.0.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-promise": "^6.0.0",
+		"eslint-plugin-react": "^7.31.8",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"prettier": "^2.7.1",
 		"typescript": "*"
 	}
 }
