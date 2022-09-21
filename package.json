@@ -1,6 +1,6 @@
 {
 	"name": "@saymondamasio/eslint-config",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "My config eslint and prettier.",
 	"keywords": [
 		"eslint",
@@ -26,7 +26,7 @@
 		"registry": "https://registry.npmjs.org/"
 	},
 	"author": "Saymon Damásio <saymon.damasio95@gmail.com> (saymoncode.com)",
-	"dependencies": {
+	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.0.0",
 		"eslint": "^8.23.1",
 		"eslint-config-google": "^0.14.0",
