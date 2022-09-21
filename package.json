@@ -28,6 +28,7 @@
 	"author": "Saymon Damásio <saymon.damasio95@gmail.com> (saymoncode.com)",
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.0.0",
+		"@typescript-eslint/parser": "^5.25.0",
 		"eslint": "^8.23.1",
 		"eslint-config-google": "^0.14.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -38,8 +39,7 @@
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.31.8",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"prettier": "^2.7.1",
-		"typescript": "*"
+		"prettier": "^2.7.1"
 	},
 	"peerDependencies": {
 		"eslint": "^8.23.1",
