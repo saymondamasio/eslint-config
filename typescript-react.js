@@ -8,7 +8,7 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module'
 	},
-	plugins: ['react', 'react-hooks', 'prettier'],
+	plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier'],
 	rules: {
 		'prettier/prettier': [
 			'error',
