@@ -49,6 +49,7 @@ module.exports = {
 		'react/react-in-jsx-scope': 'off',
 		'import/no-anonymous-default-export': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'off',
+		'@typescript-eslint/explicit-function-return-type': 'off',
 		'import/no-unresolved': 'error',
 		'import/order': [
 			'error',
