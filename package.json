@@ -1,6 +1,6 @@
 {
 	"name": "@saymondamasio/eslint-config",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"description": "My config eslint and prettier.",
 	"keywords": [
 		"eslint",
