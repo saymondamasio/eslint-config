@@ -11,6 +11,7 @@ module.exports = {
 		'plugin:react-hooks/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:tailwindcss/recommended',
+		'plugin:jsx-a11y/recommended',
 		'plugin:import/typescript',
 	],
 	plugins: [
@@ -23,9 +24,11 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	overrides: [],
 	parserOptions: {
+		ecmaFeatures: {
+      jsx: true
+    },
 		ecmaVersion: 'latest',
-		sourceType: 'module',
-		project: './tsconfig.json'
+		sourceType: 'module'
 	},
 	rules: {
 		'prettier/prettier': [
@@ -47,10 +50,8 @@ module.exports = {
 			'error'
 		],
 		'react/react-in-jsx-scope': 'off',
-		'import/no-anonymous-default-export': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
-		'import/no-unresolved': 'error',
 		'import/order': [
 			'error',
 			{
@@ -85,12 +86,6 @@ module.exports = {
 				'.ts',
 				'.tsx'
 			]
-		},
-		'import/resolver': {
-			'typescript': {
-				'alwaysTryTypes': true,
-				'project': '<root>/tsconfig.json'
-			}
 		}
 	}
 }
