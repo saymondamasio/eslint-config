@@ -4,29 +4,28 @@ module.exports = {
 		es2021: true
 	},
 	extends: [
+		'next/core-web-vitals',
 		'standard-with-typescript',
 		'prettier',
 		'plugin:react/recommended',
-		'plugin:@typescript-eslint/recommended',
 		'plugin:react-hooks/recommended',
-		'plugin:jest-dom/recommended',
-		'plugin:cypress/recommended',
-		'plugin:import/recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:tailwindcss/recommended',
 		'plugin:import/typescript',
 	],
 	plugins: [
-		'react',
+		'jsx-a11y',
+		'import',
+		"react-hooks",
 		'prettier',
 		'@typescript-eslint',
-		'testing-library',
-		'jest-dom',
-		'import',
-		'cypress'
 	],
+	parser: '@typescript-eslint/parser',
 	overrides: [],
 	parserOptions: {
 		ecmaVersion: 'latest',
-		sourceType: 'module'
+		sourceType: 'module',
+		project: './tsconfig.json'
 	},
 	rules: {
 		'prettier/prettier': [
@@ -43,22 +42,13 @@ module.exports = {
 				semi: false
 			}
 		],
-		'prettier/prettier': 'error',
 		'prefer-template': 'error',
-		'react-hooks/rules-of-hooks': 'error',
-		'react-hooks/exhaustive-deps': 'warn',
-		'@next/next/no-img-element': 'off',
 		'@typescript-eslint/no-unused-vars': [
 			'error'
 		],
+		'react/react-in-jsx-scope': 'off',
 		'import/no-anonymous-default-export': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'off',
-		'testing-library/no-node-access': [
-			'error',
-			{
-				'allowContainerFirstChild': true
-			}
-		],
 		'import/no-unresolved': 'error',
 		'import/order': [
 			'error',
