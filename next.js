@@ -28,7 +28,8 @@ module.exports = {
       jsx: true
     },
 		ecmaVersion: 'latest',
-		sourceType: 'module'
+		sourceType: 'module',
+		project: './tsconfig.json'
 	},
 	rules: {
 		'prettier/prettier': [
