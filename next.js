@@ -12,6 +12,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:tailwindcss/recommended',
 		'plugin:jsx-a11y/recommended',
+		'plugin:import/recommended',
 		'plugin:import/typescript',
 	],
 	plugins: [
