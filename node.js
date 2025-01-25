@@ -3,13 +3,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'plugin:import/recommended', 'plugin:import/typescript'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -22,28 +22,8 @@ module.exports = {
         semi: false,
       },
     ],
-		'import/order': [
-			'error',
-			{
-				'newlines-between': 'always',
-				'pathGroups': [
-					{
-						'pattern': '~/**',
-						'group': 'parent'
-					},
-          {
-						'pattern': '@/**',
-						'group': 'parent'
-					}
-				]
-			}
-		],
   },
   settings: {
-    'import/resolver': {
-      typescript: true,
-      node: true,
-    },
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
